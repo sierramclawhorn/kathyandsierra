@@ -4,4 +4,6 @@ Rails.application.routes.draw do
     resources :posts
   end
 
+  root 'home#index'
+
 end
