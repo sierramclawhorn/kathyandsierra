@@ -22,6 +22,7 @@ class LocationsController < ApplicationController
       redirect location_path
     else 
       render 'new'
+    end
   end
 
   def update
