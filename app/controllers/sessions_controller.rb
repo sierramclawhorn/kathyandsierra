@@ -1,4 +1,4 @@
-class CreatorsController < ApplicationController
+class SessionsController < ApplicationController
   
   def new
     respond_to do |format|
@@ -22,6 +22,11 @@ class CreatorsController < ApplicationController
         format.js
       end
     end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to '/'
   end
 
 end
