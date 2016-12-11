@@ -1,9 +1,9 @@
-$length1:3450;
+$length1:1000;
 $length15:$length1 / 2;
-$length2:243;
+$length2:500;
 
 body {
-  background-color:darkgray;
+  background-color: #232323;
 }
 
 .skylineSF {
@@ -13,7 +13,7 @@ body {
 
 .skyline {
   stroke-dasharray:0,$length15, 0,0,0, $length15,0;
-  stroke-dashoffset:0;
+  stroke-dashoffset:15;
   -webkit-animation: skyline 20s linear infinite;
 }
 
