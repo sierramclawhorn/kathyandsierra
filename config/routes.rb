@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :creators, only: [:new, :create] do
-    resources :posts
+  resources :creators, only: [:new, :create]
+
+  resources :locations do 
+    resources :posts, except: [:index]
   end
 
-  root 'home#index'
+  root 'locations#index'
 
 end
