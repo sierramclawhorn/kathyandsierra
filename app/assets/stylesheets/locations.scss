@@ -1,3 +1,57 @@
-// Place all the styles related to the locations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$length1:3450;
+$length15:$length1 / 2;
+$length2:243;
+
+body {
+  background-color:darkgray;
+}
+
+.skylineSF {
+  margin: auto;
+  text-align: center;
+}
+
+.skyline {
+  stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+  stroke-dashoffset:0;
+  -webkit-animation: skyline 20s linear infinite;
+}
+
+@-webkit-keyframes skyline {
+  0% {
+    stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+  }
+  20% {
+    stroke-dasharray:0,0,$length15,0, $length15,0,0;
+  }
+  60% {
+    stroke-dasharray:0,0,$length15,0, $length15,0,0;
+  }
+  80% {
+    stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+  }
+  100% {
+    stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+  }
+}
+
+@-webkit-keyframes skyline-bridge {
+  0% {
+    stroke-dasharray:0,$length2;
+  }
+  15% {
+    stroke-dasharray:0,$length2;
+  }
+  17% {
+    stroke-dasharray:$length2,0;
+  }
+  63% {
+    stroke-dasharray:$length2,0;
+  }
+  65% {
+    stroke-dasharray:0,$length2;
+  }
+  100% {
+    stroke-dasharray:0,$length2;
+  }
+}
