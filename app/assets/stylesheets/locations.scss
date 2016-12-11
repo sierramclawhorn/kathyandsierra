@@ -36,24 +36,3 @@ body {
         stroke-dasharray:0,$length15, 0,0,0, $length15,0;
       }
     }
-    
-    @-webkit-keyframes skyline-bridge {
-      0% {
-        stroke-dasharray:0,$length2;
-      }
-      15% {
-        stroke-dasharray:0,$length2;
-      }
-      17% {
-        stroke-dasharray:$length2,0;
-      }
-      63% {
-        stroke-dasharray:$length2,0;
-      }
-      65% {
-        stroke-dasharray:0,$length2;
-      }
-      100% {
-        stroke-dasharray:0,$length2;
-      }
-    }   
