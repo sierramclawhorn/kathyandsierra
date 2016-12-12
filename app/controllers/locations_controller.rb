@@ -19,7 +19,7 @@ class LocationsController < ApplicationController
   def create
     @location = Location.new(location_params)
     if @location.save
-      redirect location_path
+      redirect_to location_path(@location)
     else 
       render 'new'
     end
@@ -28,7 +28,7 @@ class LocationsController < ApplicationController
   def update
     find_location
     if @location.save
-      redirect location_path
+      redirect_to location_path(@location)
     else
       render 'edit'
     end

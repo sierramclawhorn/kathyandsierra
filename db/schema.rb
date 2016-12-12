@@ -23,12 +23,13 @@ ActiveRecord::Schema.define(version: 20161211203516) do
   end
 
   create_table "locations", force: :cascade do |t|
-    t.string   "location"
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "posts", force: :cascade do |t|
+    t.integer  "user_id"
     t.date     "date"
     t.integer  "location_id"
     t.string   "sierraTitle"
@@ -38,6 +39,7 @@ ActiveRecord::Schema.define(version: 20161211203516) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["location_id"], name: "index_posts_on_location_id", using: :btree
+    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
 end
