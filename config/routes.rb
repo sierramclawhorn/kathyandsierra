@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:new, :create]
     get '/logout' => 'sessions#destroy'
     get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :posts, except: [:index]
   end
 
-  get '/about' => 'users#show'
+  resources :about, only: [:index]
 
   root 'locations#index'
 
