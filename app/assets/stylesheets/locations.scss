@@ -12,27 +12,32 @@ body {
       margin: auto;
       text-align: center;
     }
-    
+
     .skyline {
       stroke-dasharray:0,$length15, 0,0,0, $length15,0;
-      stroke-dashoffset:15;
-      -webkit-animation: skyline 20s linear infinite;
+      stroke-dashoffset:0;
+      -webkit-animation: skyline 30s linear infinite;
     }
     
     @-webkit-keyframes skyline {
       0% {
         stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+        stroke-dashoffset:0;
       }
       20% {
         stroke-dasharray:0,0,$length15,0, $length15,0,0;
+        stroke-dashoffset:300;
       }
       60% {
         stroke-dasharray:0,0,$length15,0, $length15,0,0;
+        stroke-dashoffset:600;
       }
       80% {
-        stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+        stroke-dasharray:0,0,$length15,0, $length15,0,0;
+        stroke-dashoffset:900;
       }
       100% {
-        stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+        stroke-dasharray:0,0,$length15,0, $length15,0,0;
+        stroke-dashoffset:1200;
       }
     }
