@@ -1,3 +1,3 @@
 class Location < ApplicationRecord
-  has_one :location
+  has_many :posts
 end
