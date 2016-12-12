@@ -6,7 +6,6 @@ body {
 /* SF skyline svg */
     $length1:1000;
     $length15:$length1 / 2;
-    $length2:500;
     
     .skylineSF {
       margin: auto;
@@ -14,7 +13,7 @@ body {
     }
 
     .skyline {
-      stroke-dasharray:$length15;
+      stroke-dasharray:0,$length15, 0,0,0, $length15,0;
       stroke-dashoffset:0;
       -webkit-animation: skyline 20s linear infinite;
     }
@@ -25,7 +24,7 @@ body {
         stroke-dashoffset:0;
       }
       20% {
-        stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+        stroke-dasharray:0,0,$length15,0, $length15,0,0;
         stroke-dashoffset:300;
       }
       60% {
