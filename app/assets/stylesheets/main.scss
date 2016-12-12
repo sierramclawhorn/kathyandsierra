@@ -1,5 +1,5 @@
 body {
-  margin-top: 3%;
+  margin-top: 15%;
   margin-bottom: 3%;
   background-color: #232323;
   color: white;
@@ -22,22 +22,21 @@ body {
 
 /* _HEADER */
   .nav {
-    margin: auto;
+    position: fixed;
+    top: 0;
+    margin-top: 2%;
+    width: 100%;
+    background-color: #232323;
     text-align: center;
   }
 
-  .banner {
+  .navlink {
     display: inline-block;
+    padding-left: 5%;
     padding-right: 5%;
+    vertical-align: middle;
   }
 
   .bannerImg {
     width: 20vw;
-  }
-
-  .links {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 5%;
-    margin-top: 4%;
   }
