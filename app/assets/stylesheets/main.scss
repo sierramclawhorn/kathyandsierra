@@ -2,4 +2,42 @@ body {
   margin-top: 3%;
   margin-bottom: 3%;
   background-color: #232323;
+  color: white;
+  font-family: 'Avenir Next';
 }
+
+  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: lightgray;
+  }
+
+
+
+
+
+/* _HEADER */
+  .nav {
+    margin: auto;
+    text-align: center;
+  }
+
+  .banner {
+    display: inline-block;
+    padding-right: 5%;
+  }
+
+  .bannerImg {
+    width: 20vw;
+  }
+
+  .links {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5%;
+    margin-top: 4%;
+  }
