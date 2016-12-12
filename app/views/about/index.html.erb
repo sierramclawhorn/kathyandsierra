@@ -1,11 +1,37 @@
-<div class="aboutContainer">
+<div class="aboutPageContainer">
 
-  <div class="col1 kathyAbout">
-    
+  <div class="aboutSiteContainer">
+  link to instagrams<br>
+  link to emails<br>
   </div>
-  
-  <div class="col2 sierraAbout">
-  
+
+  <div class="aboutInfoContainer">
+    <div class="kathyAbout">        
+      <%= image_tag('/images/kathyAbout.jpg', class: 'aboutImg')%> <!-- change to horizontal img -->
+      <br>
+      <p><b>Katherine Bui</b> is penguin turned software engineer. When the rest of the world is dead at 6am, you can find her at the gym lifting things.</p> 
+    </div>
+    
+    <div class="sierraAbout">
+     <%= image_tag('/images/sierraAbout.jpg', class: 'aboutImg') %> <!-- change to horizontal img -->
+      <br>
+      <p><b>Sierra McLawhorn</b> is a filmmaking software engineer. You'll probably find her rolling down a hill of San Francisco, or socializing with the dog at the party.</p>
+    </div>
+
+    <div class="aboutInfoLinks">
+      <h2>Contact</h2>
+        katherinebui@gmail.com<br>
+        sierramclawhorn@gmail.com
+        <br><br>
+
+      <h2>Social Media</h2>
+        <a href=""><%= image_tag('/socialmedia/twitter.png', class: 'socialIcon') %></a> <!-- add link -->
+        <a href="http://www.instagram.com/buiiix"><%= image_tag('/socialmedia/instagram.png', class: 'instaIcon') %></a>
+        <a href="http://www.instagram.com/flatulancebass"><%= image_tag('/socialmedia/instagram.png', class: 'instaIcon') %></a>
+        <a href=""><%= image_tag('/socialmedia/vimeo.png', class: 'socialIcon') %></a> <!-- add link -->
+
+    </div>
+
   </div>
 
 </div>

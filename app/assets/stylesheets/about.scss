@@ -1,0 +1,43 @@
+.aboutPageContainer {
+  margin: auto;
+}
+
+.aboutSiteContainer, .aboutInfoContainer {
+  display: inline-block;
+  vertical-align: top;
+  padding: 2%;
+}
+
+.aboutSiteContainer {
+  width: 55vw;
+}
+
+.aboutInfoContainer {
+  width: 35vw;
+}
+
+.sierraAbout, .kathyAbout {
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  padding: 1%;
+}
+
+.aboutImg {
+  width: 180px;
+  text-align: center;
+}
+
+.aboutInfoLinks h2 {
+  text-decoration: underline;
+}
+
+.socialIcon {
+  width: 20px;
+  padding-right: 2%;
+}
+
+.instaIcon {
+  width: 16px;
+  padding-right: 2%;
+}
