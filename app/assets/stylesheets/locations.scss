@@ -14,9 +14,9 @@ body {
     }
 
     .skyline {
-      stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+      stroke-dasharray:$length15;
       stroke-dashoffset:0;
-      -webkit-animation: skyline 30s linear infinite;
+      -webkit-animation: skyline 20s linear infinite;
     }
     
     @-webkit-keyframes skyline {
@@ -25,7 +25,7 @@ body {
         stroke-dashoffset:0;
       }
       20% {
-        stroke-dasharray:0,0,$length15,0, $length15,0,0;
+        stroke-dasharray:0,$length15, 0,0,0, $length15,0;
         stroke-dashoffset:300;
       }
       60% {
