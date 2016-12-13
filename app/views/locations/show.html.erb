@@ -5,7 +5,9 @@
 <% end %>
 
 
+<% if @location.posts.length == 0 %>
+  <h1><%= @location.name %><br>
+  Coming Soon...</h1>
+<% end %>
 
-
-<h1><%= @location.name %></h1> <!-- delete later -->
 

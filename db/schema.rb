@@ -26,9 +26,9 @@ ActiveRecord::Schema.define(version: 20161211203516) do
     t.date     "date"
     t.integer  "location_id"
     t.string   "sierraTitle"
-    t.string   "sierraBody"
+    t.text     "sierraBody"
     t.string   "kathyTitle"
-    t.string   "kathyBody"
+    t.text     "kathyBody"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["location_id"], name: "index_posts_on_location_id", using: :btree
