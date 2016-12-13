@@ -2,6 +2,7 @@
   <div class='adminPrivate'>
     <%= link_to 'New Post', new_location_post_path(@location.id) %>
   </div>
+  <br><br>
 <% end %>
 
 
@@ -11,3 +12,10 @@
 <% end %>
 
 
+
+<div class='posts'>
+
+    <!-- iterate for future when multiple posts -->
+    <%= link_to image_tag('/sanfrancisco/bernalheights.jpg', class: 'postImg'),     location_post_path(@location) %>
+    
+</div>

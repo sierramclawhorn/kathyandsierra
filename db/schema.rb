@@ -22,17 +22,14 @@ ActiveRecord::Schema.define(version: 20161211203516) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.integer  "user_id"
-    t.date     "date"
+    t.string   "date"
     t.integer  "location_id"
-    t.string   "sierraTitle"
+    t.string   "title"
     t.text     "sierraBody"
-    t.string   "kathyTitle"
     t.text     "kathyBody"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["location_id"], name: "index_posts_on_location_id", using: :btree
-    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|

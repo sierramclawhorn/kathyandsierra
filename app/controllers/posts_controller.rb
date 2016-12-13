@@ -23,7 +23,7 @@ class PostsController < ApplicationController
     find_location
     @post = @location.posts.new(post_params)
     if @post.save 
-      redirect location_posts_path
+      redirect_to location_posts_path
     else
       render 'new'
     end
@@ -34,7 +34,7 @@ class PostsController < ApplicationController
     find_location
     @post = @location.posts.find(params[:id])
     if @post.save
-      redirect location_post_path
+      redirect_to location_post_path
     else
       render 'edit'
     end
@@ -54,9 +54,8 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:date, 
                                    :location,
-                                   :sierraTitle, 
+                                   :title, 
                                    :sierraBody, 
-                                   :kathyTitle, 
                                    :kathyBody)
     end
 
