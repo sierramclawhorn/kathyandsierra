@@ -1,12 +1,14 @@
 class LocationsController < ApplicationController
 
   def index
+    find_admin
     @locations = Location.all
   end
 
   def show
     find_location
     find_admin
+    @post = @location.posts.find(params[:id])
   end
 
   def new
