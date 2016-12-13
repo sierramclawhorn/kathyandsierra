@@ -5,9 +5,8 @@ class Post < ApplicationRecord
   validates_presence_of :user
   validates_presence_of :location
   validates_presence_of :date
-  validates_presence_of :sierrabody
-  validates_presence_of :sierratitle
-  validates_presence_of :kathybody
-  validates_presence_of :kathytitle
+  validates_presence_of :title
+  validates_presence_of :sierraBody
+  validates_presence_of :kathyBody
 
 end

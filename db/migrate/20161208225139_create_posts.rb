@@ -4,9 +4,8 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.references :user
       t.date :date
       t.references :location
-      t.string :sierraTitle
+      t.string :title
       t.text :sierraBody 
-      t.string :kathyTitle
       t.text :kathyBody
 
       t.timestamps
