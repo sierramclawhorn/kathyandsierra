@@ -1,0 +1,14 @@
+<% if session[:user_id] == @admin.id %>
+  <div class='adminPrivate'>
+    <%= link_to 'New Location', new_location_path %>
+  </div>
+  <br><br>
+<% end %>
+
+
+
+<div class="locations">
+  <a class="sanfran" href="/locations/1"> 
+    <%= render 'sanfrancisco' %>
+  </a>
+</div>

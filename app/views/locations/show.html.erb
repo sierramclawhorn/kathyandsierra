@@ -1,0 +1,32 @@
+<% if session[:user_id] == @admin.id %>
+  <div class='adminPrivate'>
+    <%= link_to 'New Post', new_location_post_path(@location.id) %>
+  </div>
+  <br><br>
+<% end %>
+
+
+<% if @location.posts.length == 0 %>
+  <h1><%= @location.name %><br>
+  Coming Soon...</h1>
+<% end %>
+
+
+
+<div class='posts'>
+
+    <!-- iterate images for future when multiple posts -->
+    <div class='imgWrap'>
+    <%= image_tag('/sanfrancisco/bernalheights.jpg', class: 'postImg') %>
+        <span class='titleDate'>
+          <br><br><br><br><br><br>
+            <h1><%= @post.title %></h1>
+            <h3><%= @post.date %></h3>
+        </span>
+    </div>
+    
+    <div class='postText' style="display: none">
+      <%= render 'posts/show' %>
+    </div>
+    
+</div>
