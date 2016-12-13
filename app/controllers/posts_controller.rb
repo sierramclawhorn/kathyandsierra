@@ -23,7 +23,7 @@ class PostsController < ApplicationController
     find_location
     @post = @location.posts.new(post_params)
     if @post.save 
-      redirect_to location_posts_path
+      redirect_to location_path
     else
       render 'new'
     end
@@ -34,7 +34,7 @@ class PostsController < ApplicationController
     find_location
     @post = @location.posts.find(params[:id])
     if @post.save
-      redirect_to location_posts_path
+      redirect_to location_path
     else
       render 'edit'
     end
