@@ -1,0 +1,42 @@
+<%= form_for [@location, @post] do |f| %>
+    
+      <% if @post.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@post.errors.count, "error") %> prohibited
+            this post from being saved:
+          </h2>
+          <ul>
+            <% @post.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    
+      <p>
+        <%= f.label :kathy_Title %><br>
+        <%= f.text_field :kathyTitle, class: 'postTitle' %>
+      </p>
+      <p>
+        <%= f.label :kathy_Body %><br>
+        <%= f.text_field :kathyBody, class: 'postBody' %>
+      </p>
+
+      <p> --------------------------------- </p>  
+
+      <p>
+        <%= f.label :sierra_Title %><br>
+        <%= f.text_field :sierraTitle, class: 'postTitle' %>
+      </p>
+      <p>
+        <%= f.label :sierra_Body %><br>
+        <%= f.text_field :sierraBody, class: 'postBody' %>
+      </p>
+
+      <p> --------------------------------- </p> 
+
+        <%= f.submit "Add post" %>
+      </p>
+
+<% end %>

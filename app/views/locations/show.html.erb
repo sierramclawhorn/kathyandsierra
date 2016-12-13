@@ -1,3 +1,11 @@
-<h1><%= @location.name %></h1> <!-- delete later -->
+<% if session[:user_id] == @admin.id %>
+  <div class='adminPrivate'>
+    <%= link_to 'New Post', new_location_post_path(@location.id) %>
+  </div>
+<% end %>
 
+
+
+
+<h1><%= @location.name %></h1> <!-- delete later -->
 

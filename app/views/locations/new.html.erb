@@ -1,25 +1,27 @@
-<!-- ADD USER VALIDATION -->
+<% if session[:user_id] == @admin.id %>
 
-<%= form_for [@location] do |f| %>
+    <%= form_for [@location] do |f| %>
+    
+      <% if @location.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@location.errors.count, "error") %> prohibited
+            this location from being saved:
+          </h2>
+          <ul>
+            <% @location.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    
+      <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </p>
+        <%= f.submit "Add location" %>
+      </p>
+    <% end %>
 
-  <% if @location.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@location.errors.count, "error") %> prohibited
-        this location from being saved:
-      </h2>
-      <ul>
-        <% @location.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-    <%= f.submit "Add location" %>
-  </p>
 <% end %>
