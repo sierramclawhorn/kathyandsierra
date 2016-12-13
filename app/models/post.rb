@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  # has_attached_file :photo
   belongs_to :location
 
   validates_presence_of :location

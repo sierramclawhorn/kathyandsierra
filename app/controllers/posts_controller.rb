@@ -33,7 +33,7 @@ class PostsController < ApplicationController
     find_admin
     find_location
     @post = @location.posts.find(params[:id])
-    if @post.save
+    if @post.update(post_params)
       redirect_to location_path
     else
       render 'edit'
