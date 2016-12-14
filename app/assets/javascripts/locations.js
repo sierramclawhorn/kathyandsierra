@@ -2,10 +2,10 @@
 
 document.addEventListener("turbolinks:load", function() {
   $("a").mouseenter(function() {
-    $(this).find("line").attr("stroke", "maroon");
+    $(this).find(".skyline").attr("stroke", "maroon");
   });
   $("a").mouseleave(function() {
-    $(this).find("line").attr("stroke", "#fff");
+    $(this).find(".skyline").attr("stroke", "#fff");
   });
 });
 
