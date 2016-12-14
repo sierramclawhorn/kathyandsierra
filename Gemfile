@@ -50,7 +50,7 @@ group :api_helpers do
 end
 
 group :api do
-  gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+  # gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
