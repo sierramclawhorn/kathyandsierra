@@ -1,9 +1,9 @@
-<% if session[:user_id] == @admin.id %>
+<!-- if admin -->
   <div class='adminPrivate'>
     <%= link_to 'New Post', new_location_post_path(@location.id) %>
   </div>
   <br><br>
-<% end %>
+
 
 
 <% if @location.posts.length == 0 %>
