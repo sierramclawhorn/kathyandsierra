@@ -28,19 +28,20 @@
 
       <p>
         <%= f.label :kathy_Body %><br>
-        <%= f.text_area :kathyBody, class: 'postBody' %>
+        <%= f.text_area :kathyBody, class: 'tinymce postBody', :rows => 40, :cols => 120 %>
       </p>
 
       <p> --------------------------------- </p>  
 
       <p>
         <%= f.label :sierra_Body %><br>
-        <%= f.text_area :sierraBody, class: 'postBody' %>
+        <%= f.text_area :sierraBody, class: 'tinymce postBody', :rows => 40, :cols => 120 %>
       </p>
 
       <p> --------------------------------- </p> 
 
         <%= f.submit "Add/Update Post" %>
+        <%= tinymce plugins: "image imagetools" %>
       </p>
 
 <% end %>
