@@ -51,11 +51,13 @@
     .col1, .col2 {
       display: inline-block;
       vertical-align: top;
-      margin-left: 1%;
-      margin-right: 1%;
-      padding: 1%;
+      padding-left: 1%;
+      padding-right: 1%;
       width: 30%;
       text-align: initial;
       font-size: 1.2em;
     }
   
+  // .col1 {
+      // border-right: 1px solid white;
+  // }

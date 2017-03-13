@@ -1,25 +1,25 @@
 class PostsController < ApplicationController
   
   def show
-    find_admin
+    
     find_location
     @post = @location.posts.find(params[:id])
   end
 
   def new
-    find_admin
+    
     find_location
     @post = Post.new
   end
 
   def edit
-    find_admin
+    
     find_location
     @post = @location.posts.find(params[:id])
   end
 
   def create
-    find_admin
+    
     find_location
     @post = @location.posts.new(post_params)
     if @post.save 
@@ -30,7 +30,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    find_admin
+    
     find_location
     @post = @location.posts.find(params[:id])
     if @post.update(post_params)
@@ -41,7 +41,7 @@ class PostsController < ApplicationController
   end
 
   def destory
-    find_admin
+    
     find_location
     @post = @location.posts.find(params[:id]).destroy
   end
@@ -57,10 +57,6 @@ class PostsController < ApplicationController
                                    :title, 
                                    :sierraBody, 
                                    :kathyBody)
-    end
-
-    def find_admin
-      @admin = User.find_by_username('admin')
     end
 
 end

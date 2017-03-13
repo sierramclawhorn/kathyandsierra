@@ -1,4 +1,4 @@
-<% if session[:user_id] == @admin.id %>
+<!-- if admin -->
 
     <%= form_for [@location] do |f| %>
     
@@ -23,5 +23,3 @@
         <%= f.submit "Add location" %>
       </p>
     <% end %>
-
-<% end %>

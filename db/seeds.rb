@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+location = Location.create(name: 'San Francisco')
+post = Post.create(location_id: 1, date: 'February 21, 2017', title: 'Test', sierraBody: 'testing testing', kathyBody: 'double testing')
