@@ -1,5 +1,10 @@
-/* FORM */
+$font-stack:'Courier New', Courier, monospace;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'Playfair Display', serif;
+$font-stack4:'Poiret One', cursive;
 
+
+/* FORM */
     .postTitle {
       width: 80vw;
       height: 30px;
@@ -37,6 +42,11 @@
       color: black;
       visibility: hidden;
       opacity: 0;
+      font-family: $font-stack4;
+    }
+
+    .titleDate .titlespacing {
+      padding-top: 3%;
     }
     
     .imgWrap:hover .titleDate {
@@ -53,9 +63,25 @@
       vertical-align: top;
       padding-left: 1%;
       padding-right: 1%;
-      width: 30%;
+      width: 35%;
       text-align: initial;
-      font-size: 1.2em;
+    }
+
+    .col1 img, .col2 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .postTitleTxt {
+      font-family: $font-stack3;
+      font-weight: bolder;
+      font-decoration: underline;
+      letter-spacing: 3px;
+      font-size: 1.5em;
+    }
+
+    .postBodyTxt {
+      font-family: $font-stack2;
     }
   
   // .col1 {
