@@ -1,14 +1,13 @@
 class LocationsController < ApplicationController
 
   def index
-    
     @locations = Location.all
   end
 
   def show
     find_location
-    
-    @post = @location.posts.find(params[:id])
+    @posts = @location.posts
+    @post = @posts.find(params[:id])
   end
 
   def new
@@ -22,7 +21,6 @@ class LocationsController < ApplicationController
   end
 
   def create
-    
     @location = Location.new(location_params)
     if @location.save
       redirect_to location_path(@location)
@@ -32,7 +30,6 @@ class LocationsController < ApplicationController
   end
 
   def update
-    
     find_location
     if @location.save
       redirect_to location_path(@location)
@@ -42,7 +39,6 @@ class LocationsController < ApplicationController
   end
 
   def destroy
-    
     find_location
     @location.destroy
   end 
