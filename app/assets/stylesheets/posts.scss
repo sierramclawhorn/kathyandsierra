@@ -75,7 +75,7 @@ $font-stack4:'Poiret One', cursive;
     .postTitleTxt {
       font-family: $font-stack3;
       font-weight: bolder;
-      font-decoration: underline;
+      border-bottom: 1px dotted white;
       letter-spacing: 3px;
       font-size: 1.5em;
     }
@@ -83,7 +83,3 @@ $font-stack4:'Poiret One', cursive;
     .postBodyTxt {
       font-family: $font-stack2;
     }
-  
-  // .col1 {
-      // border-right: 1px solid white;
-  // }

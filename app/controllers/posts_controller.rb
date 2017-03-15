@@ -1,36 +1,31 @@
 class PostsController < ApplicationController
   
   def show
-    
     find_location
     @post = @location.posts.find(params[:id])
   end
 
   def new
-    
     find_location
     @post = Post.new
   end
 
   def edit
-    
     find_location
     @post = @location.posts.find(params[:id])
   end
 
   def create
-    
     find_location
     @post = @location.posts.new(post_params)
     if @post.save 
-      redirect_to location_path
+      redirect_to locations_path
     else
       render 'new'
     end
   end
 
   def update
-    
     find_location
     @post = @location.posts.find(params[:id])
     if @post.update(post_params)
@@ -41,7 +36,6 @@ class PostsController < ApplicationController
   end
 
   def destory
-    
     find_location
     @post = @location.posts.find(params[:id]).destroy
   end
