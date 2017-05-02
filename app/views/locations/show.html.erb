@@ -1,7 +1,8 @@
-<!-- if admin -->
+<% if current_user!= nil && (current_user.username == 'sierramclawhorn' || current_user.username == 'kathybui') %>
   <div class='adminPrivate'>
     <%= link_to 'New Post', new_location_post_path(@location.id) %>
   </div>
+<% end %>
   <br><br>
 
 
