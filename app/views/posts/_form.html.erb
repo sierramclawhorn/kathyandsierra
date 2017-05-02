@@ -1,0 +1,47 @@
+<%= form_for [@location, @post] do |f| %>
+    
+      <% if @post.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@post.errors.count, "error") %> prohibited
+            this post from being saved:
+          </h2>
+          <ul>
+            <% @post.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <p>
+        <%= f.label :date %><br>
+        <%= f.text_field :date, class: 'postTitle' %>
+      </p>
+    
+      <p>
+        <%= f.label :title %><br>
+        <%= f.text_field :title, class: 'postTitle' %>
+      </p>
+
+      <p> --------------------------------- </p> 
+
+      <p>
+        <%= f.label :kathy_Body %><br>
+        <%= f.text_area :kathyBody, class: 'tinymce postBody', :rows => 40, :cols => 120 %>
+      </p>
+
+      <p> --------------------------------- </p>  
+
+      <p>
+        <%= f.label :sierra_Body %><br>
+        <%= f.text_area :sierraBody, class: 'tinymce postBody', :rows => 40, :cols => 120 %>
+      </p>
+
+      <p> --------------------------------- </p> 
+
+        <%= f.submit "Add/Update Post" %>
+        <%= tinymce plugins: "image imagetools" %>
+      </p>
+
+<% end %>

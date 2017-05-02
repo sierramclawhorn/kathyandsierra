@@ -1,0 +1,15 @@
+<% if current_user!= nil && (current_user.username == 'sierramclawhorn' || current_user.username == 'kathybui') %>
+ <div class='adminPrivate'>
+    <%= link_to 'New Location', new_location_path %>
+  </div>
+<% end %>
+<br><br>
+
+
+
+
+<div class="locations">
+  <a class="sanfran" href="/locations/1"> 
+    <%= render 'sanfrancisco' %>
+  </a>
+</div>

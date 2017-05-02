@@ -1,0 +1,12 @@
+<h1>Login</h1>
+<div id="errors">
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "flash #{key}" %>
+  <% end %>
+</div>
+
+<%= form_tag '/login' do %>
+  Username: <%= text_field_tag :username %>
+  Password: <%= password_field_tag :password %>
+  <%= submit_tag 'Log In!' %>
+<% end %>

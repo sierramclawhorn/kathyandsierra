@@ -1,0 +1,6 @@
+<%=  form_for :user, url: '/users' do |f| %>
+  Username: <%= f.text_field :username %>
+  Password: <%= f.password_field :password %>
+  Confirm Password: <%= f.password_field :password_confirmation %>
+  <%= submit_tag "sign up" %>
+<% end %>

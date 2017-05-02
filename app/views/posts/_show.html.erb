@@ -1,0 +1,16 @@
+<div class="col1 kathy">
+  <%= render 'posts/kathy' %>
+</div>
+
+<div class="col2 sierra">
+  <%= render 'posts/sierra' %>
+</div>
+
+
+<% if current_user!= nil && (current_user.username == 'sierramclawhorn' || current_user.username == 'kathybui') %>
+<br><br>
+  <%= link_to 'Edit', edit_location_post_path(@location, @post) %> 
+  |
+  <%= link_to 'Delete', location_post_path(@location, @post), method: :delete, data: { confirm: "DON'T DO IT!! STAHP! WHATAREYOUDOING!?" } %>
+<% end %>
+  <br><br>

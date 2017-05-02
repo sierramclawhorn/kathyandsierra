@@ -1,1 +1,8 @@
+
 # kathyandsierra
+
+### TODOs
+
+* map
+* styling
+

@@ -1,0 +1,107 @@
+$font-stack:'Courier New', Courier, monospace;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'Playfair Display', serif;
+$font-stack4:'Poiret One', cursive;
+
+
+/* FORM */
+    .postTitle {
+      width: 80vw;
+      height: 30px;
+    }
+  
+    .postBody {
+      width: 80vw;
+      height: 200px;
+    }
+
+
+
+/* INDEX */
+
+    .posts {
+      text-align: center;
+    }
+  
+    .postImg {
+      width: 100vw;
+    }
+  
+    .imgWrap {
+      position: relative;
+      width: 100vw;
+    }
+  
+    .titleDate {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.7);
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      font-family: $font-stack4;
+    }
+
+    .titleDate .titlespacing {
+      padding-top: 3%;
+    }
+    
+    .imgWrap:hover .titleDate {
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+
+/* SHOW */
+
+    .col1, .col2 {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 1%;
+      padding-right: 1%;
+      width: 35%;
+      text-align: initial;
+    }
+
+    .col1 img, .col2 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .postTitleTxt {
+      font-family: $font-stack3;
+      font-weight: bolder;
+      border-bottom: 1px dotted white;
+      letter-spacing: 3px;
+      font-size: 1.5em;
+    }
+
+    .postBodyTxt {
+      font-family: $font-stack2;
+    }
+
+
+    hr {
+        width: 60%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        padding: 0;
+        border: none;
+        border-top: medium double grey;
+        color: grey;
+        text-align: center;
+    }
+
+    hr:after {
+        content: "🔄";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background: #232323;
+    }
