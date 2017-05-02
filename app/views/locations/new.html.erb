@@ -1,4 +1,4 @@
-<!-- if admin -->
+<% if current_user!= nil && (current_user.username == 'sierramclawhorn' || current_user.username == 'kathybui')%>
 
     <%= form_for [@location] do |f| %>
     
@@ -23,3 +23,5 @@
         <%= f.submit "Add location" %>
       </p>
     <% end %>
+
+<% end %>
