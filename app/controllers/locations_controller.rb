@@ -6,7 +6,7 @@ class LocationsController < ApplicationController
 
   def show
     find_location
-    @posts = @location.posts
+    @posts = @location.posts.order('date DESC')
     @post = @posts.find(params[:id])
   end
 
