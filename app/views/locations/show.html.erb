@@ -15,37 +15,5 @@
 
 
 <div class='posts'>
-
-    <% @posts.each do |post| %>
-      <div class='postWrap'>
-        <h1 class='titlespacing'><%= post.title %></h1>
-      </div>
-      <div class='postText' style="display: none">
-        <h3><%= post.date %></h3>
-
-        <div class="col1 kathy">
-          <h3 class='postTitleTxt'>Kathy</h3>
-            <div class='postBodyTxt'>
-              <%= raw post.kathyBody %>
-            </div>
-        </div>
-        <div class="col2 sierra">
-          <h3 class='postTitleTxt'>Sierra</h3>
-            <div class='postBodyTxt'> 
-              <%= raw post.sierraBody %>
-            </div>
-        </div>
-
-        <% if current_user!= nil && (current_user.username == 'sierramclawhorn' || current_user.username == 'kathybui') %>
-        <br><br>
-          <%= link_to 'Edit', edit_location_post_path(@location, @post) %> 
-          |
-          <%= link_to 'Delete', location_post_path(@location, @post), method: :delete, data: {        confirm: "DON'T DO IT!! STAHP! WHATAREYOUDOING!?" } %>
-        <% end %>
-        <br><br>
-
-      </div>
-      <hr>
-    <% end %>
-
+<%= render 'posts/index' %>
 </div>
