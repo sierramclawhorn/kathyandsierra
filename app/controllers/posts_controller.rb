@@ -38,7 +38,7 @@ class PostsController < ApplicationController
   def destory
     find_location
     @post = @location.posts.find(params[:id]).destroy
-    redirect_to locations_path
+    redirect_to location_path
   end
 
   private
