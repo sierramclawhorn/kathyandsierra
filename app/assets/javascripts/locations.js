@@ -12,7 +12,7 @@ document.addEventListener("turbolinks:load", function() {
 // SHOW
 
 document.addEventListener("turbolinks:load", function() {
-	$('.imgWrap').on('click', function(){
+	$('.postWrap').on('click', function(){
     $(this).next('.postText').slideToggle("slow");
   });
 });
