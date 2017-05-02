@@ -9,9 +9,9 @@
         }
     
         .skyline {
-          stroke-dasharray:0,$length15, 0,0,0, $length15,0;
-          stroke-dashoffset:0;
-          -webkit-animation: skyline 20s linear infinite;
+          // stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+          // stroke-dashoffset:0;
+          // -webkit-animation: skyline 20s linear infinite;
         }
         
         @-webkit-keyframes skyline {
