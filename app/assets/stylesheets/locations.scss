@@ -1,3 +1,8 @@
+$font-stack:'Courier New', Courier, monospace;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'Playfair Display', serif;
+$font-stack4:'Poiret One', cursive;
+
 /* INDEX */
 
     /* SF skyline svg */
@@ -45,6 +50,19 @@
       width: 40%;
       margin: auto;
       text-align: center;
+    }
+
+    .locationTitle {
+      font-family: $font-stack2;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 1.1em;
+    }
+
+    .sfMini {
+      display: inline-block;
+      text-align: center;
+      width: 40%;
     }
 
 

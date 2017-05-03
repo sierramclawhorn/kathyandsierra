@@ -11,6 +11,10 @@
   Coming Soon...</h1>
 <% end %>
 
+<div class='locationTitle'>
+	<div class='sfMini'><%= render(:partial => 'sanfrancisco')%></div><br>
+	{ <%= @location.name %> }
+</div>
 
 <div class='posts'>
 <%= render 'posts/index' %>
