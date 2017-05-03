@@ -8,6 +8,10 @@ body {
   background-color: #232323;
   color: white;
   font-family: 'Avenir Next';
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
   a {
@@ -40,6 +44,8 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     vertical-align: middle;
+    font-family: $font-stack;
+    letter-spacing: 1.1px;
   }
 
   .bannerImg {
