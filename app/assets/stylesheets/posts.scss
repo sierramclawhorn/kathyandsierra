@@ -82,12 +82,13 @@ $font-stack4:'Poiret One', cursive;
       font-weight: bolder;
       border-bottom: 1px dotted white;
       letter-spacing: 3px;
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
 
     .postBodyTxt {
-      font-family: $font-stack2;
-      font-weight: bold;
+      font-family: 'Avenir Next';
+      line-height: 200%;
+      letter-spacing: 0.2em;
     }
 
 
