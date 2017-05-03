@@ -54,81 +54,8 @@ body {
 
 
 //* MOBILE *//
-  /* Portrait */
-@media only screen /* iphone 4 */
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-   #mobile_portrait { 
-    display: block;
-    width: 100%;
-    height: 204px;
-    position: absolute;
-    left: 0px;
-    top: 125px;
-    background-image: url(public/rotatephone.jpg);
-    background-size: 250px 204px;
-    background-position: center;
-    background-repeat: no-repeat;
-   }
-}
-@media only screen /* iphone 5 */
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-   #mobile_portrait { 
-    display: block;
-    width: 100%;
-    height: 204px;
-    position: absolute;
-    left: 0px;
-    top: 125px;
-    background-image: url(public/rotatephone.jpg);
-    background-size: 250px 204px;
-    background-position: center;
-    background-repeat: no-repeat;
-   }
-}
-@media only screen /* iphone 6 */
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-   #mobile_portrait { 
-    display: block;
-    width: 100%;
-    height: 204px;
-    position: absolute;
-    left: 0px;
-    top: 125px;
-    background-image: url(public/rotatephone.jpg);
-    background-size: 250px 204px;
-    background-position: center;
-    background-repeat: no-repeat;
-   }
-}
-@media only screen /* iphone 6+ */
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-   #mobile_portrait { 
-    display: block;
-    width: 100%;
-    height: 204px;
-    position: absolute;
-    left: 0px;
-    top: 125px;
-    background-image: url(public/rotatephone.jpg);
-    background-size: 250px 204px;
-    background-position: center;
-    background-repeat: no-repeat;
-   }
-}
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (min-width : 320px) {
    #mobile_portrait { 
     display: block;
     width: 100%;
