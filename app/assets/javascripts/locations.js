@@ -2,7 +2,7 @@
 
 document.addEventListener("turbolinks:load", function() {
   $("a").mouseenter(function() {
-    $(this).find(".skyline").attr("stroke", "maroon");
+    $(this).find(".skyline").attr("stroke", "teal");
   });
   $("a").mouseleave(function() {
     $(this).find(".skyline").attr("stroke", "#fff");
