@@ -1,3 +1,8 @@
+$font-stack:'Courier New', Courier, monospace;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'Playfair Display', serif;
+$font-stack4:'Poiret One', cursive;
+
 /* INDEX */
 
     /* SF skyline svg */
@@ -9,9 +14,9 @@
         }
     
         .skyline {
-          stroke-dasharray:0,$length15, 0,0,0, $length15,0;
-          stroke-dashoffset:0;
-          -webkit-animation: skyline 20s linear infinite;
+          // stroke-dasharray:0,$length15, 0,0,0, $length15,0;
+          // stroke-dashoffset:0;
+          // -webkit-animation: skyline 20s linear infinite;
         }
         
         @-webkit-keyframes skyline {
@@ -41,10 +46,23 @@
 
 /* SHOW */
 
-    .postsText {
-      width: 40%;
+    .postText {
+      width: 100vw;
       margin: auto;
       text-align: center;
+    }
+
+    .locationTitle {
+      font-family: $font-stack2;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 1.1em;
+    }
+
+    .sfMini {
+      display: inline-block;
+      text-align: center;
+      width: 40%;
     }
 
 

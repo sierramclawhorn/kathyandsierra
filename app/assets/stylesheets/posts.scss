@@ -27,31 +27,23 @@ $font-stack4:'Poiret One', cursive;
       width: 100vw;
     }
   
-    .imgWrap {
+    .postWrap {
       position: relative;
       width: 100vw;
     }
-  
-    .titleDate {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.7);
-      color: black;
-      visibility: hidden;
-      opacity: 0;
-      font-family: $font-stack4;
+
+    .titlespacing {
+      font-family: $font-stack2;
+      font-size: 300%;
     }
 
-    .titleDate .titlespacing {
-      padding-top: 3%;
+    .titlespacing:hover {
+      text-shadow: 2px 2px teal;
     }
-    
-    .imgWrap:hover .titleDate {
-      visibility: visible;
-      opacity: 1;
+  
+    .postDate {
+      font-family: $font-stack;
+      letter-spacing: 2px;
     }
 
 
@@ -61,9 +53,9 @@ $font-stack4:'Poiret One', cursive;
     .col1, .col2 {
       display: inline-block;
       vertical-align: top;
-      padding-left: 1%;
-      padding-right: 1%;
-      width: 35%;
+      padding-left: 3%;
+      padding-right: 3%;
+      width: 40%;
       text-align: initial;
     }
 
@@ -77,11 +69,13 @@ $font-stack4:'Poiret One', cursive;
       font-weight: bolder;
       border-bottom: 1px dotted white;
       letter-spacing: 3px;
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
 
     .postBodyTxt {
-      font-family: $font-stack2;
+      font-family: 'Avenir Next';
+      line-height: 120%;
+      letter-spacing: 0.5x!important;
     }
 
 

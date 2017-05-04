@@ -1,6 +1,8 @@
-# TODOs
 
-* oauth
+# kathyandsierra
+
+### TODOs
+
 * map
 * styling
-* post img iteration??
+

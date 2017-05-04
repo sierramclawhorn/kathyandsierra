@@ -1,4 +1,9 @@
 class PostsController < ApplicationController
+
+  def index
+    find_location
+    @posts = @location.posts
+  end
   
   def show
     find_location
@@ -19,7 +24,7 @@ class PostsController < ApplicationController
     find_location
     @post = @location.posts.new(post_params)
     if @post.save 
-      redirect_to locations_path
+      redirect_to location_path(@location)
     else
       render 'new'
     end
@@ -29,15 +34,18 @@ class PostsController < ApplicationController
     find_location
     @post = @location.posts.find(params[:id])
     if @post.update(post_params)
-      redirect_to location_path
+      redirect_to location_path(@location)
     else
       render 'edit'
     end
   end
 
-  def destory
+  def destroy
     find_location
     @post = @location.posts.find(params[:id]).destroy
+    if @post.destroy
+      redirect_to location_path(@location)
+    end
   end
 
   private
