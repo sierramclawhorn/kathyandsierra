@@ -47,3 +47,30 @@
   width: 16px;
   padding-right: 2%;
 }
+
+
+
+
+@media only screen and (max-width: 865px) {
+  .aboutSiteContainer, .aboutInfoContainer {
+    display: block;
+  }
+  .aboutSiteContainer {
+    width: 92vw;
+    margin: auto;
+  } 
+  .aboutInfoContainer {
+    width: 92vw;
+    margin: auto;
+  }
+  .individualAbouts {
+    margin: auto;
+    width: 67vw;
+  }
+  .sierraAbout, .kathyAbout {
+    width: 240px;
+  }
+  .aboutImg {
+    width: 240px;
+    }
+}
