@@ -6,16 +6,24 @@
   <br><br>
 
 
-<% if @location.posts.length == 0 %>
-  <h1><%= @location.name %><br>
-  Coming Soon...</h1>
-<% end %>
-
 <div class='locationTitle'>
-	<div class='sfMini'><%= render(:partial => 'sanfrancisco')%></div><br>
+	<% if @location.name == "San Francisco" %>
+		<div class='skylineMini'><%= render(:partial => 'sanfrancisco')%></div><br>
+	<% elsif @location.name == "Los Angeles" %>
+		<div class='skylineMini'><%= render(:partial => 'losangeles')%></div><br>
+	<% end %>
 	{ <%= @location.name %> }
 </div>
 
 <div class='posts'>
 <%= render 'posts/index' %>
+</div>
+
+
+<div class="noPosts">
+	<% if @location.posts.length == 0 %>
+		<br><br>
+  		<h1><%= @location.name %><br>
+  		Coming Soon...</h1>
+	<% end %>
 </div>

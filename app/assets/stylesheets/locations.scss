@@ -9,7 +9,7 @@ $font-stack4:'Poiret One', cursive;
         $length1:1000;
         $length15:$length1 / 2;
         
-        .skylineSF {
+        .skylineSF, .skylineLA {
           text-align: center;
         }
     
@@ -59,7 +59,7 @@ $font-stack4:'Poiret One', cursive;
       font-size: 1.1em;
     }
 
-    .sfMini {
+    .skylineMini {
       display: inline-block;
       text-align: center;
       width: 40%;
